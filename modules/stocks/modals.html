@@ -1,0 +1,55 @@
+<div id="modal-add" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card  animated slideInUp">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Add Stock</p>
+    </header>
+    <section class="modal-card-body">
+      <div class="component-block">
+        <div class="field">
+          <div class="control">
+            <select
+              class="chosen-select"
+              data-placeholder="Project category"
+              style="display: none;"
+            >
+              <option label="App category"></option>
+              <option>Document management</option>
+              <option>HR management</option>
+              <option>ERP</option>
+              <option>Invoicing</option>
+              <option>Email marketing</option>
+              <option>CRM</option>
+              <option disabled="">Helpdesk</option>
+              <option>Corporate chat</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button onclick="modalAddSave()" class="button is-success">
+        Save changes
+      </button>
+      <button onclick="modalAddRemove()" class="button ">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+<div id="modal-detail" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card  animated slideInUp">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Detail Stock</p>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button onclick="modalDetailSave()" class="button is-success">
+        Save changes
+      </button>
+      <button onclick="modalDetailRemove()" class="button ">Cancel</button>
+    </footer>
+  </div>
+</div>

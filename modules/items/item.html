@@ -1,0 +1,49 @@
+<div class="box">
+  <div class="columns level-left">
+    <div
+      class="field is-grouped is-grouped-multiline"
+      style="margin-left: 1em;"
+    >
+      <div class="control">
+        <span
+          class="button  modal-button is-primary is-outlined is-small"
+          onclick="modalAddShow()"
+          ><i class="fas fa-plus" style="margin: 5px;"></i>Add Stock</span
+        >
+      </div>
+      <div class="control">
+        <a
+          id="buttonReload"
+          onclick="reloadTable()"
+          class="button is-info is-outlined is-small"
+          ><i class="fas fa-sync" style="margin: 5px;"></i>Reload</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="table-container">
+    <div class="notification">
+      <table
+        id="datatable"
+        class="table is-narrow is-hoverable is-fullwidth"
+        style="width:100%"
+      >
+        <thead>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>No</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>No</th>
+            <th>Name</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

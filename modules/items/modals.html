@@ -1,0 +1,110 @@
+<div id="modal-add" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card  animated slideInUp">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Add Item</p>
+    </header>
+    <section class="modal-card-body">
+      <fieldset>
+        <div class="field">
+          <label class="label" for="item-name">Item Name</label>
+          <div class="control">
+            <input
+              id="item-name"
+              name="item-name"
+              type="text"
+              placeholder="item name"
+              class="input "
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="description">Description</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              id="description"
+              name="description"
+            ></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="images">Images</label>
+          <div class="control">
+            <div class="dropzone" id="imagesAdd"></div>
+          </div>
+        </div>
+      </fieldset>
+    </section>
+    <footer class="modal-card-foot">
+      <button onclick="modalAddSave()" class="button is-outlined is-success">
+        Save changes
+      </button>
+      <button onclick="modalAddRemove()" class="button is-outlined ">
+        Cancel
+      </button>
+    </footer>
+  </div>
+</div>
+
+<div id="modal-detail" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card  animated slideInUp">
+    <header class="modal-card-head">
+      <p class="modal-card-title level-left">Detail Item</p>
+      <button
+        id="edit-item"
+        onclick="modalDetailEdit(this)"
+        class="button is-outlined is-primary level-right"
+      >
+        Edit
+      </button>
+    </header>
+    <section class="modal-card-body">
+      <fieldset>
+        <div class="field">
+          <label class="label" for="item-name-detail">Item Name</label>
+          <div class="control">
+            <input
+              id="item-name-detail"
+              name="item-name-detail"
+              type="text"
+              placeholder="item name"
+              class="input "
+              disabled
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="description-detail">Description</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              id="description-detail"
+              name="description-detail"
+              disabled
+            ></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="images">Images</label>
+          <div class="control">
+            <div class="dropzone" id="imagesEdit"></div>
+          </div>
+        </div>
+      </fieldset>
+    </section>
+    <footer class="modal-card-foot">
+      <button
+        id="item-update"
+        onclick="modalDetailSave()"
+        class="button is-outlined is-success"
+      >
+        Save changes
+      </button>
+      <button onclick="modalDetailRemove()" class="button is-outlined ">
+        Cancel
+      </button>
+    </footer>
+  </div>
+</div>
